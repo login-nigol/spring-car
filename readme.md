@@ -1,4 +1,4 @@
-# Spring book: Система управления списком автомобилей и инженеров
+# Spring book: Система управления списком автомобилей и инженеров.
 
 ## Описание: 
 Это простое Spring Boot приложение для управления списком автомобилей и инженеров, ответственных за их 
@@ -30,3 +30,30 @@ EngineerController: REST-контроллер для управления зап
 ### Файлы конфигурации:
 
 application.properties: Настройки подключения к базе данных (например, MySQL).
+
+**Основная структура проекта**
+
+```
+spring-car
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── spring_car
+│   │   │       ├── configuration
+│   │   │       │   └── SwaggerConfig.java
+│   │   │       ├── controllers
+│   │   │       │   ├── CarController.java
+│   │   │       │   └── EngineerController.java
+│   │   │       ├── models
+│   │   │       │   ├── Car.java
+│   │   │       │   └── Engineer.java
+│   │   │       ├── repositories
+│   │   │       │   ├── CarRepository.java
+│   │   │       │   └── EngineerRepository.java
+│   │   │       └── services
+│   │   │           ├── CarService.java
+│   │   │           └── EngineerService.java
+│   ├── resources
+│   │   └── application.properties
+└── pom.xml
+```
